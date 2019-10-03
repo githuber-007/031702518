@@ -42,7 +42,7 @@ protected void writeinto(String output)
 		out.write(c1+"手机"+c2+":"+c1+this.tel_number+c2+",");
 		out.write(c1+"地址"+c2+":[");
 		out.write(c1+this.first_addr+c2+",");
-		out.write(c1+this.sec_addr+'"'+c2+",");
+		out.write(c1+this.sec_addr+c2+",");
 		out.write(c1+this.third_addr+c2+",");
 		out.write(c1+this.fourth_addr+c2+",");
 		out.write(c1+this.fifth_addr+c2);
