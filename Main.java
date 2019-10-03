@@ -45,7 +45,7 @@ public class Main {
 				;
 		}
 				reade.close();
-				System.out.println("[");
+				System.out.print("[");
 		   show(output);
 			System.out.print("]");
 		//m.close();
@@ -70,10 +70,10 @@ public class Main {
 
   next=reade.readLine();
   if(next!=null)
-	System.out.println(s+',');
+	System.out.print(s+',');
   else
   {
-	  System.out.println(s);
+	  System.out.print(s);
 	  break;
   }
   s=next;
