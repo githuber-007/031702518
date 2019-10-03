@@ -44,6 +44,10 @@ public class Main {
 				new seven_addr(arr[1],output);
 			
 				}
+			else if(arr[0].equalsIgnoreCase("3"))
+			{
+				new seven_addr(arr[1],output);
+			}
 			else
 				;
 		}
