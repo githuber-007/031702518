@@ -23,6 +23,8 @@ public class seven_addr extends addr{
 	    	this.tel_number=str;
 			String[] arr1=arr[1].split(str);
 			str=arr1[0]+arr1[1];
+		        int l=str.length()-1;
+			str=str.substring(0,l);
 			depart(str);
 			writeinto(this.output);
 	    }
