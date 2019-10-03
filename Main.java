@@ -53,7 +53,7 @@ public class Main {
 			    InputStreamReader re=new InputStreamReader(new FileInputStream(new File(output)),"UTF-8");
 			    BufferedReader rea=new BufferedReader((re));
 			    String str=rea.readLine();
-			    System.out.println(str);
+			    //System.out.println(str);
 			    str=str.substring(0,str.length()-1);
 			    BufferedWriter out1=new BufferedWriter(
 					    new OutputStreamWriter(new FileOutputStream(output,true)));
