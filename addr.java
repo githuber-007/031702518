@@ -56,7 +56,7 @@ public class addr {
 		out.write(c1+this.third_addr+c2+",");
 		out.write(c1+this.fourth_addr+c2+",");
 		out.write(c1+this.fifth_addr+c2);
-		out.write("]}"+"\r\n");
+		out.write("]},");
 		out.close();
 	
 	}
