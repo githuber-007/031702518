@@ -45,9 +45,6 @@ public class Main {
 				;
 		}
 				reade.close();
-				System.out.print("[");
-		   show(output);
-			System.out.print("]");
 		//m.close();
 	}
 			else
@@ -55,31 +52,3 @@ public class Main {
 				System.out.println("Error in finding input files");
 			}
 	}
-	
-	public static void show(String file)throws Exception
-	{
-		
-			File f=new File(file);
-			InputStreamReader red=new InputStreamReader(new FileInputStream(f),"UTF-8");
-		    BufferedReader reade=new BufferedReader((red));
-		    String s=null;
-		    String next=null; 
-		    s=reade.readLine();
-		    while(true)
-{
-
-  next=reade.readLine();
-  if(next!=null)
-	System.out.print(s+',');
-  else
-  {
-	  System.out.print(s);
-	  break;
-  }
-  s=next;
-  
-}
-		    reade.close();
-		
-	}
-}
