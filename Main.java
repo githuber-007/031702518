@@ -29,8 +29,7 @@ public class Main {
 		{
 			String str=message;
 			//System.out.println(message);
-			int l=str.length()-1;
-			str=str.substring(0,l);
+			
 			String[] arr=str.split("!");
 			//System.out.println("arr"+arr[0]);
 		
