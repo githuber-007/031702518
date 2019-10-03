@@ -12,8 +12,7 @@ public class seven_addr extends addr{
 	public seven_addr(String s,String output)throws Exception
 	{
 		this.output=output;
-		String[] arr=s.split(",");
-		this.name=arr[0];
+		
 		String num="\\d{11}";
 		Pattern p=Pattern.compile(num);
 	    Matcher m=p.matcher(arr[1]);
@@ -23,8 +22,10 @@ public class seven_addr extends addr{
 	    	this.tel_number=str;
 			String[] arr1=arr[1].split(str);
 			str=arr1[0]+arr1[1];
-		        int l=str.length()-1;
-			str=str.substring(0,l);
+		        String[] arr=str.split(",");
+		       this.name=arr[0];
+		        int l=arr[1].length()-1;
+			str=arr[1].substring(0,l);
 			depart(str);
 			writeinto(this.output);
 	    }
