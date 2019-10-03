@@ -9,7 +9,7 @@ public class Main {
 	        String input=m.nextLine();
 	        System.out.println("please input the output file's path ");
 	        String output=m.nextLine();*/
-	
+	           
 		    String input=agrs[0];
 		    String output=agrs[1];
 			//String encoding="GBK";
@@ -20,6 +20,10 @@ public class Main {
 					
 			    InputStreamReader red=new InputStreamReader(new FileInputStream(file),"UTF-8");
 			    BufferedReader reade=new BufferedReader((red));
+			BufferedWriter out=new BufferedWriter(
+		new OutputStreamWriter(new FileOutputStream(output,true)));
+				out.write("[");
+				out.close();
 			    String message=null;
 		while((message=reade.readLine())!=null)
 		{
@@ -44,7 +48,18 @@ public class Main {
 			else
 				;
 		}
+				
 				reade.close();
+								
+			    InputStreamReader re=new InputStreamReader(new FileInputStream(new File(output)),"UTF-8");
+			    BufferedReader rea=new BufferedReader((re));
+			    String str=rea.readLine();
+			    System.out.println(str);
+			    str=str.substring(0,str.length()-1);
+			    BufferedWriter out1=new BufferedWriter(
+					    new OutputStreamWriter(new FileOutputStream(output,true)));
+				out1.write(str+"]");
+		            out1.close();
 		//m.close();
 	}
 			else
