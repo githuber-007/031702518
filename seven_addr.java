@@ -49,7 +49,7 @@ protected void writeinto(String output)
 		out.write(c1+this.fifth_addr+c2);
 		out.write(c1+this.sixth_addr+c2+",");
 		out.write(c1+this.seventh_addr+c2);
-		out.write("]},"+"\r\n");
+		out.write("]},");
 		out.close();
 	}
 	catch(Exception e)
