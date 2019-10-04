@@ -46,7 +46,10 @@ public class Main {
 				}
 			else if(arr[0].equalsIgnoreCase("3"))
 			{
-				new seven_addr(arr[1],output);
+			 BufferedWriter out0=new BufferedWriter(
+					    new OutputStreamWriter(new FileOutputStream(output,true)));
+				out0.write(arr[1]);
+		            out0.close();	
 			}
 			else
 				;
