@@ -10,8 +10,8 @@ public class Main {
 	        System.out.println("please input the output file's path ");
 	        String output=m.nextLine();*/
 	           
-		    String input=agrs[0];
-		    String output=agrs[1];
+		    String input="input.txt";
+		    String output="031702518.txt";
 			//String encoding="GBK";
 			File file=new File(input);
 			if(file.isFile() && file.exists())
